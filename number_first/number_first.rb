@@ -1,5 +1,6 @@
 require 'byebug'
 require 'prime'
+require 'faker'
 
 class NumberFirst
   def initialize(max_numbers)
@@ -8,8 +9,8 @@ class NumberFirst
   end
 
   def calculated_list
-      @numbers_prime.select do |numbers|
-        Prime.prime?(numbers)
-      end
+    @numbers_prime.select do |numbers|
+      Prime.prime?(numbers)
     end
   end
+end

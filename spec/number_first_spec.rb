@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 RSpec.describe './number_first' do
-  let(:output) { %x(#{command}) }
+  let(:output) { `#{command}` }
   describe 'mandatory arguments sign' do
     context 'when one argument is zero' do
       let(:command) { 'ruby ./number_first.rb 0' }

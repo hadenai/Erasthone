@@ -1,8 +1,19 @@
+GIT
+  remote: https://github.com/faker-ruby/faker.git
+  revision: d7de9880588bc6c178ccc8acedc3b727cf9320e2
+  branch: master
+  specs:
+    faker (2.13.0)
+      i18n (>= 1.6, < 2)
+
 GEM
   remote: https://rubygems.org/
   specs:
     byebug (9.1.0)
+    concurrent-ruby (1.1.6)
     diff-lcs (1.3)
+    i18n (1.8.4)
+      concurrent-ruby (~> 1.0)
     rspec (3.9.0)
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
@@ -22,6 +33,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug (~> 9.0, >= 9.0.6)
+  faker!
   rspec
 
 BUNDLED WITH

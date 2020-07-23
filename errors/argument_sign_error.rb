@@ -1,6 +1,6 @@
 class ArgumentSignError < ArgumentError
-  def initalize(msg = nil)
-    message = "List of numbers is either or negative."
+  def initialize(msg = nil)
+    message = "Height or Width is either zero or negative."
     super(message)
   end
 end
