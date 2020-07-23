@@ -1,10 +1,8 @@
-require 'byebug'
-require 'faker'
 
 class NumberFirst
   def initialize(max_numbers)
     @max_numbers = max_numbers
-    @numbers_prime = 2.step(@max_numbers).to_a
+    @numbers_prime = (2..@max_numbers).to_a
   end
 
   def is_prime?(max_numbers)
@@ -20,5 +18,9 @@ class NumberFirst
     @numbers_prime.select do |numbers|
       is_prime?(numbers)
     end
+  end
+
+  def display_list
+    calculated_list.join(" ")
   end
 end

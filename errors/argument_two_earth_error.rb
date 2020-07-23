@@ -1,5 +1,5 @@
 class ArgumentTwoEarthError < ArgumentError
-  def initalize(_msg = nil)
+  def initialize
     message = 'The planet earth is not allowed to exist twice !'
     super(message)
   end

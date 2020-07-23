@@ -1,5 +1,5 @@
 class ArgumentTooBigError < ArgumentError
-  def initialize(msg = nil)
+  def initialize
     message = "Height or Width is over 100000 !!"
     super(message)
   end
